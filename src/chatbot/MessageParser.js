@@ -14,8 +14,6 @@ MessageParser
 
     if (helloAndRestart.some((word) => lowerCaseMessage.includes(word))) {
       this.actionProvider.greet();
-    } else if (lowerCaseMessage.includes("javascript")) {
-      this.actionProvider.handleJavascriptList();
     }
   }
 }

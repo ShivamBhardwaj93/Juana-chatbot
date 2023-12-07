@@ -5,7 +5,7 @@ import "../baseOptions/Options.css";
 const MoreCourseOptions = (props) => {
   const options = [
     { text: "Game Based Learning", handler: props.actionProvider.handlegamebasedlearning, id: 1 },// handle game based learning // experiential learning // personal development
-    { text: "Experiential Learing", handler: props.actionProvider.handleexperientiallearning, id: 3 },
+    { text: "Experiential Learing", handler: props.actionProvider.handlexperientiallearning, id: 3 },
     { text: "Personal Development", handler: props.actionProvider.handlepersonaldevelopment, id: 4 },
    
   ];
