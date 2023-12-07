@@ -1,44 +1,20 @@
 import React from "react";
 
 import "../baseOptions/Options.css";
-import GameBasedLearning from "./GameBasedLearning";
-import ExperientialLearning from "./ExperentialLearning";
-import PersonalDevelopment from "./PersonalDevelopment";
 
 const MoreCourseOptions = (props) => {
   const options = [
-    {
-      text: "Game Based Learning",
-      handler: () => {
-        const content = <GameBasedLearning />;
-        const html = document.createElement('html');
-        html.innerHTML = content;
-        return html.outerHTML;
-      },
-      id: 1,
-    },
-    {
-      text: "Experiential Learning",
-      handler:() =>{
-        const content = < ExperientialLearning/>;
-        const html = document.createElement('html');
-        html.innerHTML = content;
-        return html.outerHTML;
-    },
-      id: 2,
-    },
-    {
-      text: "Personal Development",
-      handler:<PersonalDevelopment />,
-      id: 3,
-    },
+    { text: "Game Based Learning", handler: props.actionProvider.handlegamebasedlearning, id: 1 },// handle game based learning // experiential learning // personal development
+    { text: "Experiential Learing", handler: props.actionProvider.handleexperientiallearning, id: 3 },
+    { text: "Personal Development", handler: props.actionProvider.handlepersonaldevelopment, id: 4 },
+   
   ];
 
   const optionsMarkup = options.map((option) => (
     <button
       className="option-button"
       key={option.id}
-      onClick= {window.open(option.handler)}
+      onClick={option.handler}
     >
       {option.text}
     </button>
@@ -48,3 +24,4 @@ const MoreCourseOptions = (props) => {
 };
 
 export default MoreCourseOptions;
+
