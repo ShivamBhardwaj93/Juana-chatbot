@@ -4,11 +4,11 @@ import "./Options.css";
 
 const BaseOptions = (props) => {
   const options = [
-    { text: "A Certain kind of Course", handler: props.actionProvider.handleCourse, id: 1 },// handle game based learning // experiential learning // personal development
-    { text: "Store", handler: props.actionProvider.handleStore, id: 3 },
-    { text: "About Instructors", handler: props.actionProvider.handleInstructor, id: 4 },
+    { text: "Courses we offer", handler: props.actionProvider.handleCourse, id: 1 },// handle game based learning // experiential learning // personal development
+    { text: "Visit Store", handler: props.actionProvider.handleStore, id: 3 },
+    { text: "Know our Instructors", handler: props.actionProvider.handleInstructor, id: 4 },
     { text: "I don't see anything here", handler: props.actionProvider.handleForum, id: 5 },
-    { text: "help us improve", handler: props.actionProvider.handle, id: 6 },
+    { text: "contact us", handler: props.actionProvider.handlecontactus, id:6}
   ];
 
   const optionsMarkup = options.map((option) => (

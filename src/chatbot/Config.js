@@ -92,6 +92,17 @@ const config = {
           id: 1,
         }]
       }
+    },
+    {
+      widgetName: 'contactus',
+      widgetFunc:(props) =>< LinkList {...props}/>,
+      props:{
+        options:[{
+          text:"head to the Forums",
+          url: "https://justnexo.com/forums",
+          id: 1,
+        }]
+      }
     }
 
 
@@ -102,10 +113,10 @@ const config = {
   //here we have defined the various steps in this extra
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#cf202e",
     },
     chatButton: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#cf202e",
     },
   },
 }

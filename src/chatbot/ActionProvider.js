@@ -71,7 +71,16 @@ class ActionProvider {
         
         this.updateChatbotState(message);
     }
-
+    handlecontactus = () =>{
+        const message = [this.createChatBotMessage("Tel: +91 11 4100 4112       Email: support@justnexo.com         JUANA TECHNOLOGIES PVT. LTD.",{
+            //add config widget
+            widget:"contactus"
+        })];
+        message.forEach(element => {
+            this.updateChatbotState(element);
+        });
+        
+    }
 
 
 
