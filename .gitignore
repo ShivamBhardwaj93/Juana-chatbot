@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/src/components/kindofcourseoptions
+
 # production to be undo if a problem arouses
 #/build 
 

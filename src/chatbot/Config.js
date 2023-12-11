@@ -102,8 +102,8 @@ const config = {
           url: "https://justnexo.com/forums",
           id: 1,
         },{
-          text: 'Request a callback',
-          url: 'https://forms.office.com/Pages/ResponsePage.aspx?id=sN105GbtaUSGllpAibkG_9oZGsSjJvtGn8tGSSS0FNpUMUJBWlE4VTFRMDZDOTdDRERYWkk5T1pSNC4u',
+          text: 'Request a callback',///// just add this if you want to add a request a callback forms page in there along with the other 
+          url:'https://shivambhardwaj93.github.io/sample_form/',/// currently this only work with the linklist component only
           id: 2
         }
       
